@@ -1,0 +1,61 @@
+//CHECKPOINT 1
+ALGORITHM COMPARE_TWO_STRINGS
+VAR
+    set1, set2: INTEGER;
+    i, j : INTEGER;
+BEGIN
+    Write("give set1");
+    Read(set1);
+    Write("give set2");
+    Read(set2);
+
+    FOR i FROM 0 TO set1.length - 1 DO
+        FOR j FROM 0 To set2.length - 1 DO
+
+            IF (set1[i] = set2[j]) THEN
+            Write("Instruction not applicable");
+            BREAK;
+
+            ELSE
+            sum:=set1[i] + set2[j]
+            write(sum);
+
+            END_IF;
+        END_FOR
+    END_FOR
+END
+
+
+
+
+//CHECKPOINT 2
+
+PROCEDURE dot_product(v1, v2)
+VAR
+    v1 : INTEGER;
+    v2 : INTEGER;
+    ps : INTEGER;
+BEGIN
+// Calculate the dot product of two vectors v1 and v2
+    ps := v1 * v2
+    IF ps := 0 THEN
+    Write ("v1 and v2 are orthogonal")
+    ELSE
+    Write ("v1 and v2 are not orthogonal")
+    END_IF
+END    
+    
+
+
+
+    str1.toLowerCase();
+    FOR i FROM 0 TO str1.length DO
+        FOR j FROM 0 TO str2.length DO
+            IF(str1[i] != str2[j])
+            Write("THE STRINGS ARE NOT THE SAME");
+            ELSE
+            Write("THE STRINGS ARE THE SAME");
+            END_IF
+        END_FOR
+    END_FOR
+END
